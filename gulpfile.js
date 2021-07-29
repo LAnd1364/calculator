@@ -64,7 +64,7 @@ function build() {
       'app/css/style.min.css',
       'app/js/main.min.js'       
    ], {base: 'app'})
-   .pipe(docs('dist'))
+   .pipe(dest('docs'))
 }
 
 function cleanDist() {
