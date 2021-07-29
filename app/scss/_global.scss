@@ -1,0 +1,36 @@
+html,
+body {
+   height: 100%;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   @extend %rubic-400;
+   background-color: #091921;
+   &::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(#e91e63, #ffc107);
+   clip-path: circle(22% at 30% 20%);
+}
+&::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(#fff, #da00ff);
+   clip-path: circle(20% at 70% 90%);
+   }
+}
+.main {
+   flex-grow: 1;
+}
